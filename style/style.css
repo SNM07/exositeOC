@@ -28,7 +28,7 @@ header {
 }
 
 #searchFilters h2 {
-  font-weight:900;
+  font-weight: 600;
 }
 
 .menu {
@@ -83,6 +83,137 @@ header {
 #insnav > a:visited {
   font-weight: bold;
   color: #0065fc;
+}
+
+/* #secH {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40 10%;
+}
+
+.cardH {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  margin: 10px;
+  box-shadow: 6px 6px 6px black;
+  border-radius: 10px;
+}
+
+.cardH img {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardH .container {
+  display: block;
+  width: 100%;
+  min-height: 15rem;
+}
+ */
+
+#Hébergements {
+  background-color: #f2f2f2;
+  max-width: 70%;
+}
+
+#Hébergements h1 {
+  padding: 20px;
+}
+
+.cardH img {
+  height: 250px;
+  width: 250px;
+  vertical-align: ;
+  object-fit: cover;
+}
+
+.secH {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cardH {
+  display: flex;
+  padding: 1rem;
+  @media (min-width: 40rem) {
+    width: 50%;
+  }
+  @media (min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.cardH_item {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#LesPlusPopulaires {
+  background-color: #f2f2f2;
+  max-width: 30%;
+  margin-left: 20px;
+}
+
+#LesPlusPopulaires h1 {
+  padding: 20px;
+}
+
+.cardPP img {
+  height: 250px;
+  width: 250px;
+  vertical-align: ;
+  object-fit: cover;
+}
+
+.secPP {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cardPP {
+  display: flex;
+  padding: 1rem;
+  @media (min-width: 40rem) {
+    width: 50%;
+  }
+  @media (min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.cardPP_item {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#sectionCentre {
+  display: flex;
+  flex-direction: row;
 }
 
 .actContainer {
