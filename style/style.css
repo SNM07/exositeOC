@@ -29,10 +29,6 @@ header {
   margin-right: 50px;
 }
 
-#searchFilters h2 {
-  font-weight: 600;
-}
-
 #corps {
   margin-left: 50px;
   margin-right: 50px;
@@ -91,6 +87,113 @@ header {
   font-weight: bold;
   color: #0065fc;
 }
+#searchFilters p {
+  margin-top: 0;
+}
+
+#searchFilters h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#searchContainer {
+  position: relative;
+  margin-top: 12px;
+}
+
+#searchContainer i {
+  position: absolute;
+  font-size: 22px;
+  line-height: 40px;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px 0 0 15px;
+}
+
+#searchContainer input {
+  position: absolute;
+  margin-left: 46px;
+  width: 200px;
+  height: 50px;
+  border-left: none;
+  border-right: none;
+  border-color: #f2f2f2;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+}
+
+::placeholder {
+  font-weight: bold;
+  font-family: inherit;
+  color: black;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#searchContainer button {
+  position: absolute;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  height: 50px;
+  width: 120px;
+  margin-left: 240px;
+}
+
+#filtre {
+  position: relative;
+  margin-top: 0px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.btn {
+  height: 44px;
+  border-radius: 22px;
+  background-color: white;
+  font-family: inherit;
+  border-style: solid;
+  border-color: #f2f2f2;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 0;
+  padding-right: 22px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.btn i {
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 0 15px 0 10px;
+  border-radius: 40px;
+  height: 42px;
+  width: 16px;
+  line-height: 40px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+#filtreContainer {
+  padding-top: 70px;
+  height: 60px;
+  display: flex;
+}
+
+#filtreContainer h2 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 6px;
+}
 
 #info {
   display: flex;
@@ -115,6 +218,7 @@ header {
 
 #info p {
   padding-left: 14px;
+  padding-top: 14px;
 }
 
 #Hébergements {
