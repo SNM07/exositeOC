@@ -7,9 +7,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: black;
-  margin-top: 0;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0;
 }
 
 a:visited {
@@ -20,15 +18,24 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #searchFilters {
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #searchFilters h2 {
   font-weight: 600;
+}
+
+#corps {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .menu {
@@ -85,53 +92,47 @@ header {
   color: #0065fc;
 }
 
-/* #secH {
+#info {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40 10%;
+  justify-content: left;
+  align-content: center;
+  padding: 20px 0 20px 0;
 }
 
-.cardH {
-  display: inline-block;
-  width: 200px;
-  height: 300px;
-  position: relative;
-  margin: 10px;
-  box-shadow: 6px 6px 6px black;
-  border-radius: 10px;
+#info i {
+  color: #0065fc;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 20px;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0px 0px 2px black;
+  box-sizing: border-box;
 }
 
-.cardH img {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+#info p {
+  padding-left: 14px;
 }
-
-.cardH .container {
-  display: block;
-  width: 100%;
-  min-height: 15rem;
-}
- */
 
 #Hébergements {
   background-color: #f2f2f2;
+  border-radius: 22px;
   max-width: 70%;
 }
 
 #Hébergements h1 {
   padding: 20px;
+  padding-left: 60px;
+  margin-bottom: 0;
 }
 
 .cardH img {
-  height: 250px;
-  width: 250px;
+  height: 100px;
+  width: 200px;
+  border-radius: 20px 20px 0 0;
   vertical-align: ;
   object-fit: cover;
 }
@@ -141,7 +142,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
-  margin: 0;
+  margin: 0 40px 0 40px;
   padding: 0;
 }
 
@@ -158,15 +159,24 @@ header {
 
 .cardH_item {
   background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  padding: 6px;
+}
+
+#afficherPlus {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px;
+  padding-left: 60px;
 }
 
 #LesPlusPopulaires {
   background-color: #f2f2f2;
+  border-radius: 22px;
   max-width: 30%;
   margin-left: 20px;
 }
@@ -175,9 +185,22 @@ header {
   padding: 20px;
 }
 
+.lesPlusPopHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesPlusPopHead i {
+  padding: 20px;
+  font-size: 22px;
+}
+
 .cardPP img {
-  height: 250px;
-  width: 250px;
+  height: 130px;
+  width: 120px;
+  border-radius: 20px 0 0 20px;
   vertical-align: ;
   object-fit: cover;
 }
@@ -185,30 +208,32 @@ header {
 .secPP {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: left;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .cardPP {
-  display: flex;
+  display: block;
   padding: 1rem;
-  @media (min-width: 40rem) {
+  /* @media (min-width: 40rem) {
     width: 50%;
   }
   @media (min-width: 56rem) {
     width: 33.3333%;
-  }
+  }  */
+  width: 300px;
 }
 
 .cardPP_item {
   background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
+  padding: 4px;
 }
 
 #sectionCentre {
@@ -216,9 +241,29 @@ header {
   flex-direction: row;
 }
 
+#Activités {
+  margin-top: 60px;
+}
+
 .actContainer {
   width: 100%;
   margin: 2rem auto;
+  height: ;
+}
+
+figure {
+  background-color: white;
+  border-radius: 22px;
+  box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.25);
+  height: ;
+}
+
+figcaption {
+  background-color: white;
+  padding: 8px 20px 8px 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 22px 22px;
 }
 
 .actColumns {
@@ -226,6 +271,8 @@ header {
   grid-template-columns: repeat(4);
   grid-template-rows: repeat(2, 30%);
   grid-gap: 3rem;
+  height: 600px;
+  margin-bottom: -120px;
 }
 
 .act1,
@@ -246,6 +293,7 @@ header {
   margin: 0;
   object-fit: cover;
   display: block;
+  border-radius: 22px 22px 0 0;
 }
 
 .act1 {
@@ -276,4 +324,14 @@ header {
 .act6 {
   grid-column: 4 / span 1;
   grid-row: 2 / span 1;
+}
+
+#footerMain {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  padding-right: -60px;
 }
