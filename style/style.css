@@ -221,6 +221,14 @@ header {
   padding-top: 14px;
 }
 
+.fa-star.checked {
+  color: #0065fc;
+}
+
+.fa-star {
+  color: #f2f2f2;
+}
+
 #Hébergements {
   background-color: #f2f2f2;
   border-radius: 22px;
@@ -298,6 +306,16 @@ header {
   width: 100%;
 }
 
+.cardH h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cardH .container {
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
 #afficherPlus {
   font-weight: bold;
   font-size: 16px;
@@ -365,6 +383,26 @@ header {
   flex-direction: row;
   overflow: hidden;
   padding: 4px;
+}
+
+/* .cardPP span{
+text-align: bottom;
+} */
+
+.cardPP .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cardPP p {
+  margin-top: -20px;
+}
+
+.cardPP h4 {
+  margin-top: 0;
 }
 
 #sectionCentre {
