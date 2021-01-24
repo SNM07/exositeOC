@@ -8,28 +8,12 @@ body {
   font-weight: 500;
   color: black;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a:visited {
   color: black;
 }
-
-header {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 60px 60px;
-  grid-template-areas:
-    "logo ins"
-    "heb act";
-    position: relative;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-#logo{grid-area: logo; position: absolute;}
-#insnav{grid-area: ins; position: absolute;}
-#hebnav{grid-area: heb; position: absolute;}
-#actnav{grid-area: act; position: absolute;}
 
 @media (min-width: 800px) {
   header {
@@ -69,40 +53,95 @@ header {
   }
 }
 
-.menu {
-  list-style-type: none;
-  /*
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding-left: 0;
-} */
-}
-
-/* @media (max-width: 800px) {
-  #hebnav 
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-}
-}
-
 @media (max-width: 800px) {
-  #actnav {
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  .nav {
+    display: none;
   }
 }
 
 @media (max-width: 800px) {
-  #insnav {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+  #logo {
+    display: none;
   }
 }
- */
+
+#logo {
+  align-self: center;
+}
+
 @media (max-width: 800px) {
-  #hebnav,
-  #actnav {
-    margin-top: 120px;
+  #headerMobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #navMtop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #insnavM a {
+    color: #0065fc;
+    font-weight: bold;
+  }
+
+  #insnav:visited {
+    color: #0065fc;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  #navMbottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    outline: none;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 4px solid #f2f2f2;
+    padding: 10px 0 20px 0;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked {
+    border-bottom: 4px solid #0065fc;
+    color: #0065fc;
+  }
+  input[type="radio"]:hover {
+    border-bottom: 4px solid #0065fc;
+    color: #0065fc;
+  }
+  .hebnavM:before {
+    content: "Hébergements";
+  }
+  .actnavM:before {
+    content: "Activités";
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  #headerMobile {
+    display: none;
   }
 }
 
@@ -167,6 +206,7 @@ header {
   font-weight: bold;
   color: #0065fc;
 }
+
 #searchFilters p {
   margin-top: 0;
 }

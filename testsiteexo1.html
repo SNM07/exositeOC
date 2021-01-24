@@ -15,12 +15,22 @@
   <header>
   <nav class="nav">
     <ul class="menu">
-      <li id="hebnav" class="menuItem"><a href="#Hébergements">Hébergements</a></li>
-      <li id="actnav" class="menuItem"><a href="#Activités">Activités</a></li>
-      <li id="insnav" class="menuItem"><a href="#">S'inscrire</a></li>
+      <li class="menuItem" id="hebnav"><a href="#Hébergements">Hébergements</a></li>
+      <li class="menuItem" id="actnav"><a href="#Activités">Activités</a></li>
+      <li class="menuItem" id="insnav"><a href="#">S'inscrire</a></li>
     </ul>
   </nav>
-  <div id="logo"></div><img src="/images/logo/Reservia.svg" alt="logo Reservia" /></div>
+  <div id="logo"><img src="/images/logo/Reservia.svg" alt="logo Reservia" /></div>
+  <div id="headerMobile">
+    <ul id="navMbottom">    
+        <li><a href="#Hébergements" onclick="window.location.href='#Hébergements'"><input type="radio" class="hebnavM" name="menuItemMobile1"/></a></li>
+        <li><a href="#Activités" onclick="window.location.href='#Activités'"><input type="radio" class="actnavM" name="menuItemMobile1"/></a></li>
+    </ul>
+    <div id="navMtop">
+        <div id="insnavM" class="menuItemMobile"><a href="#">S'inscrire</a></div>
+        <div id="logoMobile"></div><img src="/images/logo/Reservia.svg" alt="logo Reservia" /></div>
+    </div>
+  </div>
   </header>
   <section id="searchFilters">
   <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
