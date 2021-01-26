@@ -3,13 +3,19 @@ a {
   color: black;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: black;
   margin: 0;
-  overflow-x: hidden;
+  position: relative;
 }
 
 a:visited {
@@ -223,6 +229,7 @@ a:visited {
   flex-direction: row;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #searchContainer i {
@@ -235,7 +242,7 @@ a:visited {
 }
 
 #searchContainer input {
-  width: 200px;
+  width: 50%;
   height: 50px;
   border-left: none;
   border-right: none;
@@ -249,7 +256,7 @@ a:visited {
   font-weight: bold;
   font-family: inherit;
   color: black;
-  font-size: 16px;
+  font-size: 100%;
   padding-left: 10px;
 }
 
@@ -268,6 +275,7 @@ a:visited {
   #searchContainer {
     position: relative;
     margin-top: 12px;
+    height: 60px;
   }
 
   #searchContainer i {
@@ -416,7 +424,6 @@ a:visited {
 }
 
 #filtreContainer {
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -424,8 +431,7 @@ a:visited {
 
 @media (min-width: 800px) {
   #filtreContainer {
-    padding-top: 70px;
-    height: 60px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -485,6 +491,13 @@ a:visited {
 
 .fa-star {
   color: #f2f2f2;
+}
+
+@media (min-width: 800px) {
+  .fa-star {
+    color: #f2f2f2;
+    font-size: 1vw;
+  }
 }
 
 #Hebergements {
@@ -788,6 +801,12 @@ figcaption {
     grid-gap: 40px;
     height: 400px;
   }
+}
+
+.actGallery {
+  height: 100%;
+  width: auto;
+  margin: 0;
 }
 
 .act1,

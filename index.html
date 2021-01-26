@@ -15,16 +15,16 @@
   <header>
   <nav class="nav">
     <ul class="menu">
-      <li class="menuItem" id="hebnav"><a href="#Hébergements">Hébergements</a></li>
-      <li class="menuItem" id="actnav"><a href="#Activités">Activités</a></li>
+      <li class="menuItem" id="hebnav"><a href="#Hebergements">Hébergements</a></li>
+      <li class="menuItem" id="actnav"><a href="#Activites">Activités</a></li>
       <li class="menuItem" id="insnav"><a href="#">S'inscrire</a></li>
     </ul>
   </nav>
   <div id="logo"><img src="images/logo/Reservia.svg" alt="logo Reservia" /></div>
   <div id="headerMobile">
     <ul id="navMbottom">    
-        <li><a href="#Hébergements" onclick="window.location.href='#Hébergements'"><input type="radio" class="hebnavM" name="menuItemMobile1"/></a></li>
-        <li><a href="#Activités" onclick="window.location.href='#Activités'"><input type="radio" class="actnavM" name="menuItemMobile1"/></a></li>
+        <li><input type="radio" class="hebnavM" name="menuItemMobile1" value="Hébergements" onclick="window.location.href='#Hebergements'"></li>
+        <li><input type="radio" class="actnavM" name="menuItemMobile1" value="Activités" onclick="window.location.href='#Activites'"></li>
     </ul>
     <div id="navMtop">
         <div id="insnavM" class="menuItemMobile"><a href="#">S'inscrire</a></div>
@@ -228,60 +228,72 @@
     <section id="Activites">
       <h1>Activités à Marseille</h1>
         <div class="actColumns">
-            <figure class="actGallery act1">
-              <a href="#">
+          <div class="act1">
+            <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"
                 class="act__img">
               <figcaption>
                 <h4><b>Vieux Port</b></h4>
               </figcaption>
-              </a>
             </figure>
-            <figure class="actGallery act2">
+            </a>
+            </div>
+            <div class="act2">
               <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"
                 class="act__img">
               <figcaption>
                 <h4><b>Fort de Pomègues</b></h4>
               </figcaption>
-              </a>
             </figure>
-            <figure class="actGallery act3">
+            </a>
+            </div>
+            <div class="act3">
               <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"
                 class="act__img">
               <figcaption>
                 <h4><b>Iles du Frioul</b></h4>
               </figcaption>
-              </a>
             </figure>
-            <figure class="actGallery act4">
+            </a>
+            </div>
+            <div class="act4">
               <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="Parc National des Calanques" class="act__img">
               <figcaption>
                 <h4><b>Parc National des Calanques</b></h4>
               </figcaption>
-              </a>
             </figure>
-            <figure class="actGallery act5">
+            </a>
+            </div>
+            <div class="act5">
               <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"
                 class="act__img">
               <figcaption>
                 <h4><b>Notre-Dame-de-la-Garde</b></h4>
               </figcaption>
-              </a>
             </figure>
-            <figure class="actGallery act6">
+          </a>
+            </div>
+            <div class="act6">
               <a href="#">
+            <figure class="actGallery">
               <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"
                 class="act__img">
               <figcaption>
                 <h4><b>Parc Longchamp</b></h4>
               </figcaption>
-              </a>
             </figure>
+            </a>
+            </div>
         </div>
       </section>
   </main>
