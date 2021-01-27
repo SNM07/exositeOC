@@ -323,20 +323,106 @@ a:visited {
   }
 }
 
-#filtre {
+.filtre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filtre input {
+  position: absolute;
+  left: -9999px;
+}
+
+.filtre label {
+  display: block;
   position: relative;
-  margin-top: 0px;
-  margin-left: -8px;
-  display: inline-block;
+  margin: 6px 12px 6px 12px;
+  padding: 13px 17px 14px 58px;
+  border: 3px solid #f2f2f2;
+  border-radius: 100px;
+  color: black;
+  background-color: white;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background-size: 200% 200%;
 }
 
 @media (min-width: 800px) {
-  #filtre {
+  .filtre label {
+    display: block;
     position: relative;
-    margin-top: 0px;
-    display: inline-block;
-    margin-left: 20px;
+    margin: 6px 12px 6px 12px;
+    padding: 13px 17px 14px 58px;
+    border: 3px solid #f2f2f2;
+    border-radius: 100px;
+    color: black;
+    background-color: white;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    background-size: 200% 200%;
+    transition: background-position ease-in-out 0.3s;
+    background-image: linear-gradient(to right, #deebff 54%, white 0);
+    background-position: right;
   }
+}
+
+.eco label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f53a";
+}
+.fam label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1ae";
+}
+.rom label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+}
+.ani label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f6d3";
+}
+.filtre label::before {
+  font-weight: 900;
+  color: #0065fc;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  font-size: 20px;
+  background-color: #deebff;
+  border-radius: 100px;
+}
+
+@media (min-width: 800px) {
+  .filtre label:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-color: #0065fc;
+    background-position: left;
+    color: #0065fc;
+  }
+}
+
+.filtre input:checked + label {
+  background-color: #0065fc;
+  background-position: left;
+  background-image: linear-gradient(to right, #0065fc 54%, white 0);
+  color: white;
+  border-color: #deebff;
+}
+
+.filtre input:checked + label::before {
+  border-color: #deebff;
 }
 
 .btn {
@@ -356,7 +442,6 @@ a:visited {
   font-weight: bold;
   position: relative;
   cursor: pointer;
-
   overflow: hidden;
 }
 
@@ -440,8 +525,13 @@ a:visited {
 
 #filtreContainer h2 {
   font-weight: bold;
-  font-size: 18px;
-  padding-top: 6px;
+  font-size: 19px;
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 20px;
+  padding-bottom: 20px;
 }
 
 #info {
@@ -769,7 +859,7 @@ a:visited {
 
 @media (min-width: 800px) {
   #Activites h1 {
-    padding-left: 0;
+    padding-left: 10px;
   }
 }
 
