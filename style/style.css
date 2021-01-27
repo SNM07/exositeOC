@@ -41,8 +41,6 @@ a:visited {
 
 @media (min-width: 800px) {
   #searchFilters {
-    display: flex;
-    flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -280,45 +278,28 @@ a:visited {
 
   #searchContainer i {
     position: absolute;
-    font-size: 22px;
-    line-height: 40px;
-    vertical-align: middle;
-    background-color: #f2f2f2;
-    padding: 5px 15px 5px 15px;
-    border-radius: 15px 0 0 15px;
   }
 
   #searchContainer input {
     position: absolute;
     margin-left: 46px;
     width: 200px;
-    height: 50px;
-    border-left: none;
-    border-right: none;
-    border-color: #f2f2f2;
-    background-color: white;
-    border-width: 2px;
-    border-style: solid;
+  }
+
+  #searchContainer input:focus {
+    outline-color: #0065fc;
   }
 
   ::placeholder {
-    font-weight: bold;
-    font-family: inherit;
-    color: black;
     font-size: 16px;
-    padding-left: 10px;
+  }
+
+  #searchContainer input:focus::placeholder {
+    color: transparent;
   }
 
   #searchContainer button {
     position: absolute;
-    color: white;
-    font-family: inherit;
-    font-size: 16px;
-    background-color: #0065fc;
-    border: none;
-    border-radius: 0 15px 15px 0;
-    height: 50px;
-    width: 120px;
     margin-left: 240px;
   }
 }
@@ -354,18 +335,6 @@ a:visited {
 
 @media (min-width: 800px) {
   .filtre label {
-    display: block;
-    position: relative;
-    margin: 6px 12px 6px 12px;
-    padding: 13px 17px 14px 58px;
-    border: 3px solid #f2f2f2;
-    border-radius: 100px;
-    color: black;
-    background-color: white;
-    white-space: nowrap;
-    cursor: pointer;
-    user-select: none;
-    background-size: 200% 200%;
     transition: background-position ease-in-out 0.3s;
     background-image: linear-gradient(to right, #deebff 54%, white 0);
     background-position: right;
@@ -425,89 +394,6 @@ a:visited {
   border-color: #deebff;
 }
 
-.btn {
-  height: 44px;
-  border-radius: 22px;
-  background-color: white;
-  font-family: inherit;
-  border-style: solid;
-  border-color: #f2f2f2;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-left: 0;
-  padding-right: 22px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: bold;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-@media (min-width: 800px) {
-  .btn {
-    height: 44px;
-    border-radius: 22px;
-    background-color: white;
-    font-family: inherit;
-    border-style: solid;
-    border-color: #f2f2f2;
-    margin-top: 10px;
-    margin-left: 20px;
-    padding-left: 0;
-    padding-right: 22px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    font-weight: bold;
-    position: relative;
-    cursor: pointer;
-
-    overflow: hidden;
-  }
-}
-
-.btn i {
-  background-color: #deebff;
-  color: #0065fc;
-  padding: 0 15px 0 10px;
-  border-radius: 40px;
-  height: 42px;
-  width: 16px;
-  line-height: 40px;
-  font-size: 16px;
-  margin-right: 10px;
-  margin-top: -2px;
-  z-index: 10;
-}
-
-.btn:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #f2f2f2;
-  mix-blend-mode: multiply;
-  border-radius: 50px;
-  position: absolute;
-  transition: all 0.4s;
-  z-index: 2;
-}
-
-.btn:before {
-  top: 0;
-  left: -210px;
-}
-
-.btn:hover:before {
-  left: 0;
-}
-
-.btn:hover {
-  border-color: #deebff;
-  color: #0065fc;
-}
-
 #filtreContainer {
   display: flex;
   flex-direction: column;
@@ -517,7 +403,6 @@ a:visited {
 @media (min-width: 800px) {
   #filtreContainer {
     height: auto;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -557,16 +442,9 @@ a:visited {
 
 @media (min-width: 800px) {
   #info i {
-    color: #0065fc;
-    border: 1px solid #f2f2f2;
-    border-radius: 50%;
-    text-align: center;
     margin-top: 10px;
     line-height: 20px;
-    width: 24px;
     height: 24px;
-    box-shadow: 0px 0px 2px black;
-    box-sizing: border-box;
   }
 }
 
@@ -585,7 +463,6 @@ a:visited {
 
 @media (min-width: 800px) {
   .fa-star {
-    color: #f2f2f2;
     font-size: 1vw;
   }
 }
@@ -612,10 +489,8 @@ a:visited {
 
 @media (min-width: 800px) {
   #Hebergements h1 {
-    padding: 20px;
     padding-left: 45px;
     padding-bottom: 40px;
-    margin-bottom: 0;
   }
 }
 
@@ -661,9 +536,7 @@ a:visited {
       "heb1 heb2 heb3"
       "heb4 heb5 heb6";
     grid-gap: 3rem;
-    list-style: none;
     margin: 0 40px 0 40px;
-    padding: 0;
   }
 }
 
@@ -678,11 +551,6 @@ a:visited {
 
 @media (min-width: 800px) {
   .cardH_item {
-    background-color: white;
-    border-radius: 24px;
-    box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    padding: 6px;
     width: 100%;
     margin: 0;
   }
@@ -707,9 +575,6 @@ a:visited {
 
 @media (min-width: 800px) {
   #afficherPlus {
-    font-weight: bold;
-    font-size: 16px;
-    padding: 20px;
     padding-left: 60px;
   }
 }
@@ -721,7 +586,6 @@ a:visited {
 
 @media (min-width: 800px) {
   #LesPlusPopulaires {
-    background-color: #f2f2f2;
     border-radius: 22px;
     max-width: 30%;
     margin-left: 20px;
@@ -748,23 +612,11 @@ a:visited {
 }
 
 @media (min-width: 800px) {
-  .lesPlusPopHead {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0px;
-  }
-
   .lesPlusPopHead i {
-    padding: 20px;
     padding-bottom: 40px;
-    font-size: 22px;
   }
 
   #LesPlusPopulaires h1 {
-    padding: 20px;
-    margin-bottom: 0;
     padding-bottom: 40px;
   }
 }
@@ -793,11 +645,9 @@ a:visited {
 
 @media (min-width: 800px) {
   .cardPP {
-    display: block;
     padding: 1rem;
     padding-top: 0;
     padding-bottom: 40px;
-    width: 100%;
   }
 }
 
@@ -834,7 +684,6 @@ a:visited {
 
 @media (min-width: 800px) {
   #sectionCentre {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -913,20 +762,6 @@ figcaption {
   margin-bottom: 90px;
 }
 
-@media (min-width: 800px) {
-  .act1,
-  .act2,
-  .act3,
-  .act4,
-  .act5,
-  .act6 {
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-  }
-}
-
 .act__img {
   width: 100%;
   height: 100%;
@@ -997,11 +832,7 @@ figcaption {
 
 @media (min-width: 800px) {
   #footerMain {
-    background-color: #f2f2f2;
     width: 100%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-start;
   }
 }
