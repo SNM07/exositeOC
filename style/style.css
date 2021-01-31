@@ -316,11 +316,17 @@ a:visited {
 
 .filtre {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  .filtre {
+    flex-direction: row;
+  }
 }
 
 .filtre input {
@@ -331,6 +337,7 @@ a:visited {
 .filtre label {
   display: block;
   position: relative;
+  width: max-content;
   margin: 6px 12px 6px 12px;
   padding: 13px 17px 14px 58px;
   border: 3px solid #f2f2f2;
